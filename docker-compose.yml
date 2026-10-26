@@ -11,6 +11,7 @@ services:
       # this is the path where download-organizer folder is located from the repository qbittorrent-gluetun-protonvpn
       - /path/to/download-organizer:/config
       # under /path/to/new/location is the location where the downloaded content will be moved.
-      # additionally create 2 subfolders here, movies and series
+      # additionally here create a subfolder toor and under toor 2 subfolders, movies and series
+      # the downladed content will be moved into toor/movies or toor/series
       - /path/to/new/location:/usb-drive-tsba
       
