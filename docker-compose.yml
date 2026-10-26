@@ -1,0 +1,16 @@
+services:
+  download-organizer:
+    build: .
+    container_name: download-organizer
+    user: "1000:1000"
+    env_file:
+      - .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      # this is the path where download-organizer folder is located from the repository qbittorrent-gluetun-protonvpn
+      - /path/to/download-organizer:/config
+      # under /path/to/new/location is the location where the downloaded content will be moved.
+      # additionally create 2 subfolders here, movies and series
+      - /path/to/new/location:/usb-drive-tsba
+      
