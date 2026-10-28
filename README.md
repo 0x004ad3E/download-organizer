@@ -10,7 +10,7 @@ Update .env
 
 Note:
 1. The container executes the code and exits. Therefore add to crontab to run it on schedule as required.
-2. There is 6 hour wait from the downloaded time until organizing into movies, series folder. This is to ensure seeding. After 6 hours, the torrent is then removed from qbittorrent and the content organized
+2. There is wait time from the downloaded time until organizing into movies, series folder. This is to ensure seeding. After wait time hours, the torrent is then removed from qbittorrent and the content organized. Set this value in .env
 
 To start
 
