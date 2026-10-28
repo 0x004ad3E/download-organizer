@@ -14,4 +14,6 @@ services:
       # additionally here create a subfolder toor and under toor 2 subfolders, movies and series
       # the downladed content will be moved into toor/movies or toor/series
       - /path/to/new/location:/usb-drive-tsba
+      # refer rss-parser repository
+      - /path/to/rss-parser/output:/rss-parser
       
